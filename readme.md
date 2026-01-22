@@ -110,7 +110,8 @@ Predictive weather modeling using stored data
 
 **👨‍🎓 About Me**
 
-Sharvesh
+Bala Sharvesh BS
 B.Tech – Artificial Intelligence & Data Science
 
 Interested in Data Engineering, ML Systems & Distributed Computing
+
