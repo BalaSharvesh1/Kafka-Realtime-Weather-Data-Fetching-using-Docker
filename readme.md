@@ -1,9 +1,9 @@
-🌐 Real-Time Weather Streaming System with Kafka & PostgreSQL
+# 🌐 Real-Time Weather Streaming System with Kafka & PostgreSQL
 
 This repository showcases a real-time weather data ingestion system built using Apache Kafka, PostgreSQL, and Python, fully containerized with Docker Compose.
 The pipeline continuously collects live weather data, streams it through Kafka, and persists it into a relational database for analytics and machine learning use cases.
 
-📌 Project Summary
+**📌 Project Summary**
 
 Weather data is collected at regular 5-second intervals
 
@@ -15,7 +15,7 @@ PostgreSQL acts as a persistent analytical datastore
 
 Entire system runs in isolated Docker containers
 
-🏗️ System Flow
+**🏗️ System Flow**
 
 Weather API
 → Kafka Producer
@@ -23,7 +23,7 @@ Weather API
 → Kafka Consumer
 → PostgreSQL Database
 
-⚙️ Technology Stack
+**⚙️ Technology Stack**
 
 Python 3.10
 
@@ -39,7 +39,7 @@ psycopg2
 
 pandas (for downstream analysis)
 
-🧩 Microservices Breakdown
+**🧩 Microservices Breakdown**
 
 Zookeeper – Manages Kafka metadata
 
@@ -51,7 +51,7 @@ Weather Consumer – Reads messages and inserts into DB
 
 PostgreSQL – Stores structured weather records
 
-✨ Core Highlights
+**✨ Core Highlights**
 
 Controlled producer–consumer execution using timers
 
@@ -63,7 +63,8 @@ Docker-network-friendly service communication
 
 Scalable foundation for analytics & ML pipelines
 
-▶️ Running the Project
+**▶️ Running the Project**
+
 Step 1: Launch all services
 docker-compose up --build -d
 
@@ -74,7 +75,7 @@ Step 3: Query stored weather data
 docker exec -it postgres psql -U user -d nrdb
 SELECT * FROM weather_data;
 
-🗄️ Database Schema
+**🗄️ Database Schema**
 weather_data (
   id SERIAL PRIMARY KEY,
   city TEXT,
@@ -83,7 +84,7 @@ weather_data (
   timestamp TIMESTAMP
 )
 
-📚 What This Project Demonstrates
+**📚 What This Project Demonstrates**
 
 End-to-end real-time data streaming
 
@@ -95,7 +96,7 @@ Python integration with distributed systems
 
 Practical groundwork for ML models & dashboards
 
-🚀 Possible Extensions
+**🚀 Possible Extensions**
 
 Include humidity, wind speed, and pressure
 
@@ -107,8 +108,9 @@ Kafka KRaft (Zookeeper-free) migration
 
 Predictive weather modeling using stored data
 
-👨‍🎓 About Me
+**👨‍🎓 About Me**
 
 Sharvesh
 B.Tech – Artificial Intelligence & Data Science
+
 Interested in Data Engineering, ML Systems & Distributed Computing
